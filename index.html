@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TODO Web App</title>
+      <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+      <h2>JS Workshop Project</h2>
+
+      <div>
+            <input type="text" name="todoInput" id="todoInput" placeholder="Enter your todo">
+            <button type="submit" onclick="addTask()">Add</button>
+      </div>
+
+      <div>
+           <!-- Label in HTML: The <label> tag defines a label for an <input> element. -->
+                
+            <label for="searchInput">Search:</label> 
+            <input type="text" id="searchInput" oninput="filterTasks()" placeholder="Search todo">
+      </div>
+
+      <ul id="todoList"></ul>
+
+      <div>
+            <!-- span in HTML: span is used to group inline-elements in a document. -->
+
+            <p>Total Tasks: <span id="totalTasks">0</span></p>
+            <p>Completed Tasks: <span id="completedTasks">0</span></p>
+      </div>
+
+      <script src="./script.js"></script>
+
+</body>
+</html>
